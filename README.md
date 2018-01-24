@@ -10,10 +10,12 @@ The CardView Class has two protocal
 
 protocol CardViewDataSouce {
     func numberOfcards(_ cardView: CardView) -> Int
+    
     func cardView(_ cardView: CardView, cardFor index: Int) -> UIView
 }
 
 protocol CardViewDelegate {
+
     func cardView(_ card: UIView, didSelectCardAt index: Int)
 }
 
